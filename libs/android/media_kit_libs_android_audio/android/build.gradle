@@ -58,10 +58,10 @@ task downloadDependencies(type: Exec)  {
 
         // Download all *.jar dependencies & verify their MD5 checksums.
         def filesToDownload = [
-            ["url": "https://github.com/media-kit/libmpv-android-audio-build/releases/download/v1.1.5/full-arm64-v8a.jar", "md5": "4d9aa89310c3a2bb87a2bb1a5014fd1c", "destination": file("$buildDir/v1.1.5/full-arm64-v8a.jar")],
-            ["url": "https://github.com/media-kit/libmpv-android-audio-build/releases/download/v1.1.5/full-armeabi-v7a.jar", "md5": "546e6e9ce1480e6ae556c70a79070160", "destination": file("$buildDir/v1.1.5/full-armeabi-v7a.jar")],
-            ["url": "https://github.com/media-kit/libmpv-android-audio-build/releases/download/v1.1.5/full-x86_64.jar", "md5": "d45f89347e3e5a445098c583cf4b9ea9", "destination": file("$buildDir/v1.1.5/full-x86_64.jar")],
-            ["url": "https://github.com/media-kit/libmpv-android-audio-build/releases/download/v1.1.5/full-x86.jar", "md5": "39d602df170d34f4f4dd3cb015b49b6f", "destination": file("$buildDir/v1.1.5/full-x86.jar")]
+            ["url": "https://github.com/media-kit/libmpv-android-audio-build/releases/download/v1.1.9/default-arm64-v8a.jar", "md5": "3057a0552b6338689fd563da4d8e2d68", "destination": file("$buildDir/v1.1.9/default-arm64-v8a.jar")],
+            ["url": "https://github.com/media-kit/libmpv-android-audio-build/releases/download/v1.1.9/default-armeabi-v7a.jar", "md5": "2fc445bfad52a289e1b01b8bcef3f8e0", "destination": file("$buildDir/v1.1.9/default-armeabi-v7a.jar")],
+            ["url": "https://github.com/media-kit/libmpv-android-audio-build/releases/download/v1.1.9/default-x86_64.jar", "md5": "b7d865cb47b70392296fe20f1a7cda68", "destination": file("$buildDir/v1.1.9/default-x86_64.jar")],
+            ["url": "https://github.com/media-kit/libmpv-android-audio-build/releases/download/v1.1.9/default-x86.jar", "md5": "6e8ff1aabe247021b47fc81ae3baf889", "destination": file("$buildDir/v1.1.9/default-x86.jar")]
         ]
 
         filesToDownload.each { fileInfo ->
